@@ -1,1 +1,38 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kick Clip Video Downloader</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <p class="badge">Max cut 30 detik</p>
+    <h1>Kick Clip Video Downloader</h1>
+    <p class="subtitle">Tempel link Kick, pilih menit mulai dan selesai, lalu download hasil potongannya.</p>
 
+    <form id="form">
+      <label>Link Kick</label>
+      <input id="url" type="url" placeholder="https://kick.com/.../clip/..." required />
+
+      <div class="grid">
+        <div>
+          <label>Dari</label>
+          <input id="start" value="00:00" placeholder="00:10" required />
+        </div>
+        <div>
+          <label>Sampai</label>
+          <input id="end" value="00:30" placeholder="00:40" required />
+        </div>
+      </div>
+
+      <button id="btn" type="submit">Download MP4</button>
+      <p id="message"></p>
+    </form>
+
+    <p class="note">Format waktu: detik, MM:SS, atau HH:MM:SS. Gunakan hanya untuk video yang kamu punya izin untuk unduh.</p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
